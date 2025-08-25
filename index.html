@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentir - Matemáticas, Sentimientos y Salud Mental</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Sentir</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active" data-section="home">Inicio</a></li>
+                    <li><a href="#aprender" class="nav__link" data-section="aprender">Aprender a Sentir</a></li>
+                    <li><a href="#amor" class="nav__link" data-section="amor">Ecuación del Amor</a></li>
+                    <li><a href="#neuromitos" class="nav__link" data-section="neuromitos">Neuromitos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección Inicio -->
+        <section id="home" class="section section--home active">
+            <div class="container">
+                <div class="hero">
+                    <h2 class="hero__title">Donde las Matemáticas Encuentran el Corazón</h2>
+                    <p class="hero__subtitle">
+                        Explora cómo las ecuaciones pueden modelar nuestros sentimientos más profundos 
+                        y ayudarnos a comprender la complejidad de la salud mental.
+                    </p>
+                    <div class="hero__content">
+                        <p>
+                            La matemática no es solo números y fórmulas abstractas. Es el lenguaje que nos permite 
+                            descifrar los patrones más íntimos de nuestras emociones y el funcionamiento de nuestra mente.
+                        </p>
+                        <p>
+                            En este viaje, descubriremos cómo las funciones matemáticas pueden representar el amor, 
+                            cómo las ondas cerebrales revelan nuestros estados mentales, y por qué entender estos 
+                            patrones es fundamental para cuidar nuestra salud mental.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Aprender a Sentir -->
+        <section id="aprender" class="section section--aprender">
+            <div class="container">
+                <h2 class="section__title">Aprender a Sentir</h2>
+                <p class="section__subtitle">
+                    Un espacio reflexivo sobre la importancia de la salud mental y cómo la matemática y la neurociencia se entrelazan.
+                </p>
+                
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>Neurociencia Computacional</h3>
+                        <p>
+                            Las <strong>ecuaciones diferenciales</strong> nos permiten simular neuronas individuales y redes neuronales completas, 
+                            ayudándonos a entender enfermedades como la esquizofrenia, epilepsia y depresión.
+                        </p>
+                        <p>
+                            Las ecuaciones de Hodgkin-Huxley modelan cómo las neuronas generan impulsos eléctricos, 
+                            revelando los mecanismos fundamentales de la comunicación cerebral.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Teoría de Redes</h3>
+                        <p>
+                            La <strong>teoría de grafos</strong> estudia la conectividad cerebral, permitiéndonos diferenciar 
+                            cerebros sanos de aquellos con alteraciones.
+                        </p>
+                        <p>
+                            Cada conexión neuronal es un vínculo en una red compleja que procesa pensamientos, 
+                            emociones y recuerdos de maneras que las matemáticas nos ayudan a comprender.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Personalización de Tratamientos</h3>
+                        <p>
+                            Los <strong>algoritmos de clasificación</strong> ayudan a personalizar tratamientos, 
+                            determinando qué terapia o medicamento puede funcionar mejor para cada paciente.
+                        </p>
+                        <p>
+                            Machine learning analiza patrones en datos clínicos para predecir respuestas a tratamientos, 
+                            haciendo la medicina más precisa y efectiva.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reflection">
+                    <h3>Reflexión</h3>
+                    <p>
+                        La salud mental es un aspecto fundamental de nuestro bienestar que muchas veces se silencia. 
+                        Las matemáticas nos ofrecen herramientas poderosas no solo para entender estos procesos, 
+                        sino para desarrollar mejores tratamientos y cuidados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Ecuación del Amor -->
+        <section id="amor" class="section section--amor">
+            <div class="container">
+                <h2 class="section__title">Ecuación del Amor</h2>
+                <p class="section__subtitle">
+                    Descubre cómo las matemáticas pueden modelar y simbolizar algo tan humano y complejo como los sentimientos.
+                </p>
+
+                <div class="simulator-container">
+                    <div class="simulator-controls">
+                        <h3>Parámetros del Amor</h3>
+                        <div class="control-group">
+                            <label for="atraccion">Atracción Inicial (A): <span id="atraccion-value">5</span></label>
+                            <input type="range" id="atraccion" min="0" max="10" value="5" step="0.1">
+                        </div>
+                        <div class="control-group">
+                            <label for="compatibilidad">Compatibilidad (C): <span id="compatibilidad-value">3</span></label>
+                            <input type="range" id="compatibilidad" min="0" max="10" value="3" step="0.1">
+                        </div>
+                        <div class="control-group">
+                            <label for="tiempo-constante">Constante de Tiempo (T): <span id="tiempo-value">10</span></label>
+                            <input type="range" id="tiempo-constante" min="1" max="20" value="10" step="0.1">
+                        </div>
+                        <div class="control-group">
+                            <label for="intensidad">Intensidad Emocional (I): <span id="intensidad-value">1</span></label>
+                            <input type="range" id="intensidad" min="0" max="5" value="1" step="0.1">
+                        </div>
+                        <div class="formula">
+                            <strong>Fórmula:</strong> Amor(t) = A × e<sup>(-t/T)</sup> + C × cos(I × t)
+                        </div>
+                    </div>
+                    <div class="chart-container" style="position: relative; height: 400px;">
+                        <canvas id="love-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="explanation">
+                    <h3>Explicación Metacognitiva</h3>
+                    <p>
+                        Esta función matemática modela cómo el amor evoluciona en el tiempo. La <strong>atracción inicial</strong> 
+                        decae exponencialmente, representando cómo la pasión intensa de los primeros momentos tiende a suavizarse.
+                    </p>
+                    <p>
+                        La <strong>compatibilidad</strong> se manifiesta como oscilaciones coseno, representando los altibajos 
+                        naturales de una relación, mientras que la <strong>intensidad</strong> controla la frecuencia de estos ciclos.
+                    </p>
+                    <p>
+                        Así, las matemáticas nos permiten visualizar patrones emocionales complejos, demostrando que 
+                        incluso nuestros sentimientos más profundos siguen principios que pueden ser modelados y comprendidos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Neuromitos -->
+        <section id="neuromitos" class="section section--neuromitos">
+            <div class="container">
+                <h2 class="section__title">Neuromitos</h2>
+                <p class="section__subtitle">
+                    Explora cómo las matemáticas dan coherencia a las imágenes de ondas cerebrales y nos ayudan a clasificar los patrones del cerebro.
+                </p>
+
+                <div class="simulator-container">
+                    <div class="wave-controls">
+                        <h3>Tipos de Ondas Cerebrales</h3>
+                        <div class="wave-control">
+                            <label>
+                                <input type="checkbox" id="delta-wave" checked>
+                                <span class="wave-label delta">Delta (0.5-4 Hz)</span> - Sueño profundo
+                            </label>
+                            <input type="range" id="delta-amplitude" min="0" max="5" value="2" step="0.1">
+                        </div>
+                        <div class="wave-control">
+                            <label>
+                                <input type="checkbox" id="theta-wave" checked>
+                                <span class="wave-label theta">Theta (4-8 Hz)</span> - Sueño ligero, meditación
+                            </label>
+                            <input type="range" id="theta-amplitude" min="0" max="5" value="2" step="0.1">
+                        </div>
+                        <div class="wave-control">
+                            <label>
+                                <input type="checkbox" id="alpha-wave" checked>
+                                <span class="wave-label alpha">Alpha (8-13 Hz)</span> - Relajación despierto
+                            </label>
+                            <input type="range" id="alpha-amplitude" min="0" max="5" value="2" step="0.1">
+                        </div>
+                        <div class="wave-control">
+                            <label>
+                                <input type="checkbox" id="beta-wave" checked>
+                                <span class="wave-label beta">Beta (13-30 Hz)</span> - Actividad cognitiva
+                            </label>
+                            <input type="range" id="beta-amplitude" min="0" max="5" value="2" step="0.1">
+                        </div>
+                        <div class="wave-control">
+                            <label>
+                                <input type="checkbox" id="gamma-wave" checked>
+                                <span class="wave-label gamma">Gamma (>30 Hz)</span> - Alta concentración
+                            </label>
+                            <input type="range" id="gamma-amplitude" min="0" max="5" value="1" step="0.1">
+                        </div>
+                    </div>
+                    <div class="chart-container" style="position: relative; height: 400px;">
+                        <canvas id="brain-waves-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="explanation">
+                    <h3>Interpretación Matemática</h3>
+                    <p>
+                        Las ondas cerebrales son representaciones matemáticas de la actividad eléctrica del cerebro. 
+                        Cada tipo de onda tiene una <strong>frecuencia característica</strong> que se modela con funciones sinusoidales.
+                    </p>
+                    <p>
+                        Las <strong>derivadas bajas</strong> (frecuencias lentas) como las ondas Delta se representan en 
+                        <span class="delta">azul</span>, indicando estabilidad cerebral y estados de descanso profundo.
+                    </p>
+                    <p>
+                        Las <strong>derivadas altas</strong> (frecuencias rápidas) como las ondas Gamma se muestran en 
+                        <span class="gamma">tonos rojizos</span>, representando actividad cerebral intensa y alta concentración.
+                    </p>
+                    <p>
+                        Así, las funciones matemáticas no son abstracciones, sino herramientas que nos permiten 
+                        clasificar y comprender los patrones complejos de nuestro cerebro.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <blockquote class="quote">
+                "Para ver claro basta con cambiar la dirección de la mirada"
+            </blockquote>
+            <div class="credits">
+                <p>Francois Lamotte Tromp – Juan Sebastián Rodríguez – Amy Gabriela Martínez</p>
+                <p>1101</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
